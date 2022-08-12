@@ -1,5 +1,5 @@
 
-# My Plan - Phone Plan Recommender System
+# MY PLAN
 
 Nowadays, Telecom Companies are keen on reaching out to customers and tailoring custom plans unique to the user as per their requirements. Telecom Companies have a lot of plans to offer to their customers. Filtering the most suitable plan for each customer, and recommending that plan to that customer can be really profitable for telecom businesses. 
 
