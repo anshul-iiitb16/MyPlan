@@ -19,6 +19,8 @@ We have built a **Phone Plan Recommender System** by collecting the customers’
 - Then we prepared an initial database which will contain a list of phone numbers and websites that will be used for data generation.
 - Then we prepared the catalog of calls and data plans.
 - Finally we coded the data_generation_module and recommender module implementing the required algorithms. 
+
+
 ## Implementation
 
 - All the code has been written in **Python Programming Language**. 
