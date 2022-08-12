@@ -110,11 +110,12 @@ Following result files will be generated:
 - **Recommendation.csv** - It contains the list of phone numbers and the Plan ID of the data plan recommended for each month. 
 
 After the data is generated, we use the KMeans.ipynb and KMeansWebsite.ipynb to create centroids for data and figure various clusters formed between different websites used.
+
 ## Screenshots
+### Application Screenshots
+![Screenshot-20220213174103-882x569](https://user-images.githubusercontent.com/77500664/184311798-4a6cf118-0c9a-492a-a861-936dac544ee4.jpg)
+![Screenshot-20220213234840-882x569](https://user-images.githubusercontent.com/77500664/184326309-fcbaeb93-622e-41b3-8053-f1009a28b284.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-![Alt text](http://full/path/to/img.jpg "Optional title")
 ## Assumptions
 
 In the real world, the information that some telecom companies can collect is the websites visited by the users and the bytes uploaded and downloaded from each  website. The data will also contain domestic and international call information for a customer. 
