@@ -21,55 +21,55 @@ We have built a **Phone Plan Recommender System** by collecting the customers’
 - Finally we coded the data_generation_module and recommender module implementing the required algorithms. 
 ## Implementation
 
-1. All the code has been written in **Python Programming Language**. 
-2. We have a directory named **CDR Recommender** which contains the following files:
-- **Calling_Plans.csv**: This file is a catalog of Talktime plans being offered by the company. Initially, there are 12 plans offered each having a unique Plan ID. It has the following columns:
-    -   **PLAN ID**: It is a unique ID given to each data plan.
-    -   **PLAN TYPE**: Indicates which type of data plan it is.
-    -   **VALIDITY(days)**: It indicates the validity of a particular plan in days.
-    -   **TALKTIME-DOM**: It mentions the Talktime for domestic calls included in each data plan.
-    -   **TALKTIME-INT**: It mentions the Talktime for International calls included in each data plan.
+- All the code has been written in **Python Programming Language**. 
+- We have a directory named **CDR Recommender** which contains the following files:
+    - **Calling_Plans.csv**: This file is a catalog of Talktime plans being offered by the company. Initially, there are 12 plans offered each having a unique Plan ID. It has the following columns:
+        -   **PLAN ID**: It is a unique ID given to each data plan.
+        -   **PLAN TYPE**: Indicates which type of data plan it is.
+        -   **VALIDITY(days)**: It indicates the validity of a particular plan in days.
+        -   **TALKTIME-DOM**: It mentions the Talktime for domestic calls included in each data plan.
+        -   **TALKTIME-INT**: It mentions the Talktime for International calls included in each data plan.
 
-- **CategoryID.csv**: All categories are assigned a unique ID called CategoryID. It is basically a map with key as CategoryID and value as Category Name. It has the following columns:
-    - **Category ID**: It mentions the unique ID given to any category.
-    - **Category Name**: It mentions the name of the categories which have been identified. 
+    - **CategoryID.csv**: All categories are assigned a unique ID called CategoryID. It is basically a map with key as CategoryID and value as Category Name. It has the following columns:
+        - **Category ID**: It mentions the unique ID given to any category.
+        - **Category Name**: It mentions the name of the categories which have been identified. 
 
-- **CDR_Sample.csv**: Just a sample CDR Data file. CDR data will be generated in a similar format. It has the following column:
-    - **Phone Number**: It mentions the list of phone numbers whose data has been generated.
-    - **Day Mins**: It mentions the Domestic call time for a customer.
-    - **Intl Mins**: It mentions the International call time for a customer.
-    - **CustServ Calls**: It mentions the number of calls a customer has made to customer service.
+    - **CDR_Sample.csv**: Just a sample CDR Data file. CDR data will be generated in a similar format. It has the following column:
+        - **Phone Number**: It mentions the list of phone numbers whose data has been generated.
+        - **Day Mins**: It mentions the Domestic call time for a customer.
+        - **Intl Mins**: It mentions the International call time for a customer.
+        - **CustServ Calls**: It mentions the number of calls a customer has made to customer service.
 
-- **Database.csv**: This file contains a list of all phone numbers and a list of all the sites that will be used for data generation. It has the following columns:
-    - **Phone Number**: Mentions list of all the phone numbers to be used in data generation.
-    - **List of Websites**: Mentions list of all the websites that are to be used in data generation.
+    - **Database.csv**: This file contains a list of all phone numbers and a list of all the sites that will be used for data generation. It has the following columns:
+        - **Phone Number**: Mentions list of all the phone numbers to be used in data generation.
+        - **List of Websites**: Mentions list of all the websites that are to be used in data generation.
 
-- **Sites_Categories.csv**: This contains the names of sites listed under the category each of them belongs to.
-- **UDR_Sample.csv**: Just a sample UDR Data file. UDR data will be generated in a similar format. It has the following columns:
-    - **Phone Number**: Mentions the list of phone numbers whose data has been generated.
-    - **Date**: Mentions date for a particular month.
-    - **Domain Name**: Mentions the names of the sites visited by the customer.
-    - **Domain Category ID**: Mentions the Category ID of the corresponding Domain name.
-    - **Bytes Uploaded**: Mentions the bytes uploaded by the user from that corresponding domain.
-    - **Bytes Downloaded**: Mentions the bytes downloaded by the user from that corresponding domain. 
+    - **Sites_Categories.csv**: This contains the names of sites listed under the category each of them belongs to.
+    - **UDR_Sample.csv**: Just a sample UDR Data file. UDR data will be generated in a similar format. It has the following columns:
+        - **Phone Number**: Mentions the list of phone numbers whose data has been generated.
+        - **Date**: Mentions date for a particular month.
+        - **Domain Name**: Mentions the names of the sites visited by the customer.
+        - **Domain Category ID**: Mentions the Category ID of the corresponding Domain name.
+        - **Bytes Uploaded**: Mentions the bytes uploaded by the user from that corresponding domain.
+        - **Bytes Downloaded**: Mentions the bytes downloaded by the user from that corresponding domain. 
 
-- **CDR_Recommender.py**: 
-    - Generates **Recommendation.csv** which lists the recommended plan for each customer.
-    - Read files **Calling_Plans.csv** to get the information about all the data plans being offered.
-    - Data Points are marked for customer records and plan records. For each customer record, distance is calculated between all plan records, and that plan is offered to the customer who is nearest to the customer record.
-    - **Recommendation Plot** is also made for each iteration of recommendations and is appended in a pdf for each month/iteration.
+    - **CDR_Recommender.py**: 
+        - Generates **Recommendation.csv** which lists the recommended plan for each customer.
+        - Read files **Calling_Plans.csv** to get the information about all the data plans being offered.
+        - Data Points are marked for customer records and plan records. For each customer record, distance is calculated between all plan records, and that plan is offered to the customer who is nearest to the customer record.
+        - **Recommendation Plot** is also made for each iteration of recommendations and is appended in a pdf for each month/iteration.
 
-- **Data_Generation_Module.py**:
-    - Generates CDR and UDR data. In each iteration, new data is generated.
-    - Reads files **Database.csv, Sites_Categories.csv, and CategoryID.csv** which helps in data generation involving specific patterns.
-    - **UDR_Assist.csv** file is also generated which just mentions names, bytes uploaded and downloaded for all the sites visited by the user in a month.
-    - This internally calls **CDR_Recommender.py** to recommend suitable plans to the customers.
+    - **Data_Generation_Module.py**:
+        - Generates CDR and UDR data. In each iteration, new data is generated.
+        - Reads files **Database.csv, Sites_Categories.csv, and CategoryID.csv** which helps in data generation involving specific patterns.
+        - **UDR_Assist.csv** file is also generated which just mentions names, bytes uploaded and downloaded for all the sites visited by the user in a month.
+        - This internally calls **CDR_Recommender.py** to recommend suitable plans to the customers.
 
-- **KMeans.ipynb**:
-    - Uses the generated module from **Data_Generation_Module.py**  to calculate the centeroid of data using K means. 
-    - Uses the initiate centroid method to select k datapoints as centroid.
-    - After calculating the centroids and errors to change the centroids every iteration, for our purpose we use K = 3 to iterate only 3 times throughout the data.
-    - After using Kmeans function, an initial cluster can be formed which helps us create blobs for data formation.
+    - **KMeans.ipynb**:
+        - Uses the generated module from **Data_Generation_Module.py**  to calculate the centeroid of data using K means. 
+        - Uses the initiate centroid method to select k datapoints as centroid.
+        - After calculating the centroids and errors to change the centroids every iteration, for our purpose we use K = 3 to iterate only 3 times throughout the data.
+        - After using Kmeans function, an initial cluster can be formed which helps us create blobs for data formation.
 
 ## Libraries Used
 
