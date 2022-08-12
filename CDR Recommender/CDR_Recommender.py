@@ -257,7 +257,6 @@ def visualise(Plan_Info, Call_Data_Info, Start_Date, Phn_number__Recommended_Pla
     # function to show the plot
     print("--------------- RECOMMENDATION PROCESS COMPLETED - SHOWING THE DATA PLOT ---------------")
 
-    plt.show()
     print("--------------- ITERATION NO. " + str(iteration + 1), "COMPLETED ---------------\n")
 
 
