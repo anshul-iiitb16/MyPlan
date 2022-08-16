@@ -19,6 +19,8 @@ We have built a **Phone Plan Recommender System** by collecting the customers’
 - Then we prepared an initial database which will contain a list of phone numbers and websites that will be used for data generation.
 - Then we prepared the catalog of calls and data plans.
 - Finally we coded the data_generation_module and recommender module implementing the required algorithms. 
+- We used 2 different approaches, first by catogorising all the user collected data, and then applying K means to it, but as the the data was too big, the visualisation appeared to be a problem. Therefore we recompiled the data for each day, and wrote a K means algorithm to ensure that the data runs everyday, and the centroids are updated on each iteration of the program run.
+
 
 
 ## Implementation
@@ -78,6 +80,7 @@ We have built a **Phone Plan Recommender System** by collecting the customers’
 - **CSV**: This library was used to create and read from or write into .csv files.
 - **Matplolib**: This library was used to draw the recommender plots.
 - **PyPDF2**: This library was used to create and merge pdf files. The recommender plots are stored in pdf form.
+- **Scikit-learn**: This library was used to create confusion matrix and other elements in our k means algorithm. We also developed an initial model to test this libraries functionality.
 - Other common libraries such as **NumPy, time, os, etc**. are also used.
 
 ## Algorithms Used and Inferences
@@ -111,7 +114,7 @@ Following result files will be generated:
 - **Results(iteration_number).pdf** - It contains all the recommendation plots for all the iterations. During each iteration, the newly generated plot for that iteration is appended to this pdf file.
 - **Recommendation.csv** - It contains the list of phone numbers and the Plan ID of the data plan recommended for each month. 
 
-After the data is generated, we use the KMeans.ipynb and KMeansWebsite.ipynb to create centroids for data and figure various clusters formed between different websites used.
+After the data is generated, we use the KMeans.ipynb and KMeansWebsite.ipynb to create centroids for data and figure various clusters formed between different websites used. We can make **New Categories** or update the existing categories of the websites based on the clustering plot. This task has to be done manually by updating **Sites_Categories.csv** and **Category ID.csv.**
 
 ## Screenshots
 ### Application Screenshots
