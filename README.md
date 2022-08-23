@@ -24,7 +24,7 @@ We have built a **Phone Plan Recommender System** by collecting the customers’
 ## Implementation
 
 - All the code has been written in **Python Programming Language**. 
-- We have a directory named **CDR Recommender** which contains the following files:
+- We have following files:
     - **Calling_Plans.csv**: This file is a catalog of Talktime plans being offered by the company. Initially, there are 12 plans offered each having a unique Plan ID. It has the following columns:
         -   **PLAN ID**: It is a unique ID given to each data plan.
         -   **PLAN TYPE**: Indicates which type of data plan it is.
@@ -131,6 +131,11 @@ Hence, keeping this in mind, we have used created a Data_Generation Module which
 - 80 percent of the users are biased toward one of the categories of sites and the rest 20 percent are random users.
 - Bytes uploaded and downloaded are higher for the sites towards which the user is biased.
 - 3-10 users are added in every next iteration.
+
+## Code Review
+- The code written can be much more optimised using advanced concepts of Object Oriented Programming.
+- Varibles used throughout the code can be declared in a separate python file instead of declaring them in the main code file.
+- One single pattern should be followed when naming the files.
 
 ## Future Scope
 
