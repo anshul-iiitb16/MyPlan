@@ -81,6 +81,9 @@ We have built a **Phone Plan Recommender System** by collecting the customers’
 - **Scikit-learn**: This library was used to create confusion matrix and other elements in our k means algorithm. We also developed an initial model to test this libraries functionality.
 - Other common libraries such as **NumPy, time, os, etc**. are also used.
 
+## Flowchart
+<img src="https://user-images.githubusercontent.com/77500664/186198940-ada92d68-e547-4fb3-9485-0692dc0238d0.jpg" width="700">
+
 ## Algorithms Used and Inferences
 
 Throughout the project duration, we analyzed and implemented multiple algorithms for each task and figured out the best suitable algorithm. The algorithm which fulfilled our requirement, was efficient and faster was finally considered.
