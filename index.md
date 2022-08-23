@@ -123,8 +123,15 @@ After the data is generated, we use the KMeans.ipynb and KMeansWebsite.ipynb to 
 
 ## Screenshots
 ### Application Screenshots
-![Screenshot-20220213174103-882x569](https://user-images.githubusercontent.com/77500664/184311798-4a6cf118-0c9a-492a-a861-936dac544ee4.jpg)
-![Screenshot-20220213234840-882x569](https://user-images.githubusercontent.com/77500664/184326309-fcbaeb93-622e-41b3-8053-f1009a28b284.png)
+<!-- ![Screenshot-20220213174103-882x569](https://user-images.githubusercontent.com/77500664/184311798-4a6cf118-0c9a-492a-a861-936dac544ee4.jpg)
+![Screenshot-20220213234840-882x569](https://user-images.githubusercontent.com/77500664/184326309-fcbaeb93-622e-41b3-8053-f1009a28b284.png) -->
+<p align="center">
+<img src="https://user-images.githubusercontent.com/77500664/184311798-4a6cf118-0c9a-492a-a861-936dac544ee4.jpg" width="700">
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/77500664/184326309-fcbaeb93-622e-41b3-8053-f1009a28b284.png" width="700">
+ </p>
 
 ## Assumptions
 
