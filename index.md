@@ -69,7 +69,7 @@ We have built a **Phone Plan Recommender System** by collecting the customers’
         - **UDR_Assist.csv** file is also generated which just mentions names, bytes uploaded and downloaded for all the sites visited by the user in a month.
         - This internally calls **CDR_Recommender.py** to recommend suitable plans to the customers.
 
-    - **KMeans.ipynb**:
+    - **KMeansFunc.py**:
         - Uses the generated module from **Data_Generation_Module.py**  to calculate the centeroid of data using K means. 
         - Uses the initiate centroid method to select k datapoints as centroid.
         - After calculating the centroids and errors to change the centroids every iteration, for our purpose we use K = 3 to iterate only 3 times throughout the data.
