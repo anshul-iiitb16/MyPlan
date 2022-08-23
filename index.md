@@ -93,6 +93,11 @@ Throughout the project duration, we analyzed and implemented multiple algorithms
      For the same purpose, we also tried implementing the cosine similarly algorithm but later dropped the idea because cosine similarly captured the orientation of the points rather than the magnitude. But in our case, magnitude had a great role in deciding the plan for a customer and not only the orientation.
 - **K Means Algorithm**:  We looked at various algorithms, to find a median/ usage for multiple data selection of plans for the users. After looking at various algorithms, we chose between **KNN and K-Means**. But as we had to cluster the data instead of creating a regression trend, we ended up using **K Means.**
 
+## Flowchart
+<p align="center">
+<img src="https://user-images.githubusercontent.com/77500664/186198940-ada92d68-e547-4fb3-9485-0692dc0238d0.jpg" width="700">
+</p>
+
 ## Steps To Run The Code
 
 - Keep all the files mentioned above in the same directory.
