@@ -132,6 +132,12 @@ Hence, keeping this in mind, we have used created a Data_Generation Module which
 - Bytes uploaded and downloaded are higher for the sites towards which the user is biased.
 - 3-10 users are added in every next iteration.
 
+## Code Review
+- The code written can be much more optimised using advanced concepts of Object Oriented Programming.
+- Varibles used throughout the code can be declared in a separate python file instead of declaring them in the main code file.
+- One single pattern should be followed when naming the files.
+
+
 ## Future Scope
 
 - We can collect churn data for a customer or identify the customers who gonna churn out and make changes to our data plans by including offers for these customers.
